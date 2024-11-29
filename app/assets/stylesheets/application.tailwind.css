@@ -1,0 +1,27 @@
+/* application.tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ใช้ @layer components เพื่อเพิ่มสไตล์ */
+@layer components {
+  /* สไตล์สำหรับโพสต์ */
+  .post {
+    @apply bg-blue-100 p-6 m-4 rounded-lg shadow-lg;
+  }
+
+  /* สไตล์สำหรับหัวข้อโพสต์ */
+  .post-title {
+    @apply text-3xl text-blue-800 font-semibold mb-4;
+  }
+
+  /* สไตล์สำหรับข้อความในโพสต์ */
+  .post-text {
+    @apply text-lg text-gray-700 leading-relaxed;
+  }
+
+  /* สไตล์สำหรับปุ่ม Submit ในโพสต์ */
+  .post .submit-btn {
+    @apply bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600;
+  }
+}
